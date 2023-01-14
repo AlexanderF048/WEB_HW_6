@@ -13,7 +13,7 @@ def fake_data_generator():
     for _ in range(3, 5+1):
         lecturers_fake.append(fake_object.name())
 
-    for _ in range(30, 50+1):
+    for _ in range(10):
         students_name_fake.append(fake_object.name())
 
     for _ in range(5, 8+1):
@@ -44,9 +44,8 @@ def reformate_fake_data_to_insert(
     for course in courses:
         ref_courses.append((course, choice(lecturers)))
 
-    for _ in groups:
-        for person in ref_students:
-            ref_group.append((choice(groups), person[0]))
+    for person in ref_students:
+        ref_group.append((choice(groups), person[0]))
 
     for student in ref_students:
         for course in courses:

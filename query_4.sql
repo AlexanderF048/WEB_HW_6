@@ -1,0 +1,1 @@
+SELECT AVG(grade) AS AVG_TOTALY FROM grades
